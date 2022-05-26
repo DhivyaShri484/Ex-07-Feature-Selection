@@ -54,7 +54,7 @@ y_pred = cross_val_predict(classifier_pipeline, X, y, cv=cv)
 print("RMSE: " + str(round(sqrt(mean_squared_error(y,y_pred)),2)))
 print("R_squared: " + str(round(r2_score(y,y_pred),2)))
 
-### Filter Features by Correlation
+# Filter Features by Correlation
 import seaborn as sn
 import matplotlib.pyplot as plt
 fig_dims = (12, 8)
