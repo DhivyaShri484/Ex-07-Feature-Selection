@@ -21,7 +21,6 @@ Save the data to the file
 ```
 Program Developed By: Dhivya Shri.B
 Register number:212221230077
-```
 from sklearn.datasets import load_boston
 boston_data=load_boston()
 import pandas as pd
@@ -55,7 +54,7 @@ y_pred = cross_val_predict(classifier_pipeline, X, y, cv=cv)
 print("RMSE: " + str(round(sqrt(mean_squared_error(y,y_pred)),2)))
 print("R_squared: " + str(round(r2_score(y,y_pred),2)))
 
-# Filter Features by Correlation
+### Filter Features by Correlation
 import seaborn as sn
 import matplotlib.pyplot as plt
 fig_dims = (12, 8)
@@ -131,7 +130,7 @@ X = boston.drop(columns='MEDV')[['CRIM','RM','PTRATIO','LSTAT']]
 y_pred = cross_val_predict(classifier_pipeline, X, y, cv=cv)
 print("RMSE: " + str(round(sqrt(mean_squared_error(y,y_pred)),3)))
 print("R_squared: " + str(round(r2_score(y,y_pred),3)))
-
+```
 
 
 # OUPUT
